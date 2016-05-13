@@ -26,16 +26,31 @@
           <a class="navbar__link--toggle" href="#">Design Components</a>
           <ul class="navbar__submenu" aria-hidden="true">
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="components/#alerts">Alerts</a>
+                <a class="submenu__item__link" href="/components/#alerts">Alerts</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="components/#buttons">Buttons</a>
+                <a class="submenu__item__link" href="/components/#breadcrumbs">Breadcrumbs</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="components/#form-elements">Form Elements</a>
+                <a class="submenu__item__link" href="/components/#buttons">Buttons</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="components/#modal">Modals</a>
+                <a class="submenu__item__link" href="/components/#form-elements">Form Elements</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/components/#links">Links</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/components/#modals">Modals</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/components/#tables">Tables</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/components/#tabs">Tabs</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/components/#status-bars">Status Bars</a>
               </li>
           </ul>
         </li>
@@ -43,21 +58,18 @@
           <a class="navbar__link--toggle" href="#">Design Elements</a>
           <ul class="navbar__submenu" aria-hidden="true">
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="elements/#colors">Colors</a>
+                <a class="submenu__item__link" href="/elements/#colors">Colors</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="elements/#icons">Icons</a>
-              </li>
-              <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="elements/#typography">Typography</a>
+                <a class="submenu__item__link" href="/elements/#typography">Typography</a>
               </li>
           </ul>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link--toggle" href="#">Layout Elements</a>
+          <a class="navbar__link--toggle" href="#">Design Modules</a>
           <ul class="navbar__submenu" aria-hidden="true">
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="layout/#navigation">Navigation</a>
+                <a class="submenu__item__link" href="/modules/#navigation">Navigation</a>
               </li>
           </ul>
         </li>
@@ -78,7 +90,7 @@
   </header>
   <div class="section__body">
     <header role="title" class="body__header">
-      <h5 class="body__header__title">Base Style</h5>
+      <h5 class="body__header__title">States: Base</h5>
     </header>
       <figure class="alert alert--success">
 <a class="alert__icon-trigger" role="button" href="#">        <svg version="1.1" id="Layer_1" x="0px" y="0px" viewbox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve" class="alert__icon">
@@ -127,6 +139,123 @@
       <p>Alerts are to be used when a user needs to be notified of an action they took. For example, if a user creates a new account in the system, they should be notified if the action succeed or failed. There are three styles of alerts: Success, warning and danger / failure. Depending on the action the user should receive the appropriate response.</p>
     </header>
   </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create alerts.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.alert</td>
+          <td>This should be applied to the element you are styling to look like an alert. It is used to target alerts and hide them when the close icon is clicked. <pre class="highlight html"><code><span class="nt">&lt;figure</span> <span class="na">class</span><span class="err">"</span><span class="na">alert</span><span class="err">"</span><span class="nt">&gt;&lt;/figure&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.alert--success</td>
+          <td>This should be applied to the element you are styling to look like an alert. It provides the correct styles for the message being returned. <pre class="highlight html"><code><span class="nt">&lt;figure</span> <span class="na">class</span><span class="err">"</span><span class="na">alert--success</span><span class="err">"</span><span class="nt">&gt;&lt;/figure&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">[aria-hidden="true"]</td>
+          <td>Set this on the alert when it is hidden from the view.</td>
+        </tr>
+        <tr>
+          <td>[aria-hidden="false"]</td>
+          <td>Set this on the alert when it is visible in the view.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section role="region" aria-labelledby="breadcrumbs" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="breadcrumbs">Breadcrumbs</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base</h5>
+    </header>
+    <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link breadcrumb__link--active">Account</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link breadcrumb__link--active">Site Name Goes Here</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link breadcrumb__link--not-active">Pool Name Goes Here</a>
+        </li>
+    </ul>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"breadcrumb__list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"breadcrumb__link breadcrumb__link--active"</span><span class="nt">&gt;</span>Account Name<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"breadcrumb__link breadcrumb__link--active"</span><span class="nt">&gt;</span>Site Name Goes Here<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"breadcrumb__link breadcrumb__link--not-active"</span><span class="nt">&gt;</span>Pool Name Goes Here<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Breadcrumbs are used to allow the user to move back up the account, site, pool tree. As the user dives deeper into a accounts details, we need to provide a way for them move back to different levels without having to go back to the dashboard and traverse back down. We also don't want to rely on the browser's back button.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create a breadcrumb list.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.breadcrumb__list</td>
+          <td>This class name should be applied to a unordered list tag. It is the parent of the breadcrumb items. <pre class="highlight html"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"breadcrumb__list"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- breadcrumb items here --&gt;</span> <span class="nt">&lt;/ul&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.breadcrumb__item</td>
+          <td>This should be set on a list item. It requires a parent unordered list. <pre class="highlight html"><code><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb__item"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- breadcrumb link here --&gt;</span> <span class="nt">&lt;/li&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.breadcrumb__link</td>
+          <td>This should be set on an anchor tag and should be wrapped by a parent list item. <pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"breadcrumb__link"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- breadcrumb text --&gt;</span> <span class="nt">&lt;/a&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.breadcrumb__link--active</td>
+          <td>Apply this state to breadcrumb links that take the user back up the tree. <pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"breadcrumb__link breadcrumb__link--active"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- breadcrumb text --&gt;</span> <span class="nt">&lt;/a&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.breadcrumb__link--not-active</td>
+          <td>Apply this state to the current breadcrumb link. This will give the user a visual indication of where they are at in the tree. <pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"breadcrumb__link breadcrumb__link--active"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- breadcrumb text --&gt;</span> <span class="nt">&lt;/a&gt;</span></code></pre>
+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 <section role="region" aria-labelledby="buttons" class="page__section">
   <header role="banner" class="section__header section__header--alt">
@@ -135,6 +264,772 @@
     </div>
   </header>
   <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Hover</h5>
+    </header>
+    <ul>
+        <li class="float--left margin-bottom--alpha margin-right--charlie">
+          <button class="button--primary">Action Title Here</button>
+        </li>
+        <li class="float--left margin-bottom--alpha margin-right--charlie">
+          <button class="button--secondary">Action Title Here</button>
+        </li>
+        <li class="float--left margin-bottom--alpha margin-right--charlie">
+          <button class="button--warning">Action Title Here</button>
+        </li>
+        <li class="float--left margin-bottom--alpha margin-right--charlie">
+          <button class="button--disabled">Action Title Here</button>
+        </li>
+    </ul>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button--primary"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button--secondary"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button--warning"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button--disabled"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"button--primary"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"button--secondary"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"button--warning"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"button--disabled"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Buttons should be used sparely throughout the design of the application. They must serve a general purpose or action. For instance, if the user is going to be creating a new site or pool, it is in our best interest to show them where they can do that in a bold way. However, if a user will not be preforming the action repeatdly or does not need to be warned of their actions, a link is best used. For example, creating a new account. This happens less frequently then creating sites and pools. It shouldn't draw as much attention.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create buttons.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.button--primary</td>
+          <td>This class name should be applied to either an anchor tag or a button tag. <pre class="highlight html"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button--primary"</span><span class="nt">&gt;</span>Action Title Here<span class="nt">&lt;/button&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">[role="button"]</td>
+          <td>Set this on the an anchor tag if it styled like and acts like a button.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section role="region" aria-labelledby="form-elements" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="form-elements">Form Elements</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Hover, Active</h5>
+    </header>
+      <label class="label">Standard Input</label>
+      <input
+        type="text"
+        name="text"
+        placeholder="Placeholder text goes here"
+        class="input--text" />
+      <label class="label">Search Input</label>
+      <input
+        type="search"
+        name="search"
+        placeholder="Search for some object"
+        class="input--search" />
+      <label class="label">Disabled Input</label>
+      <input
+        type="text"
+        name="text"
+        placeholder="Can't type here"
+          disabled="true"
+        class="input--text" />
+    <label class="label">Select Input</label>
+    <select class="select">
+      <option>Select Option 1</option>
+      <option>Select Option 2</option>
+      <option>Select Option 3</option>
+      <option>Select Option 4</option>
+      <option>Select Option 5</option>
+    </select>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Standard Input<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder text goes here"</span> <span class="na">class=</span><span class="s">"input--text"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Search Input<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder text goes here"</span> <span class="na">class=</span><span class="s">"input--text"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Disabled Input<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Can't type here"</span> <span class="na">disabled=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"input--text"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Select Input<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Option 1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Option 2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Option 4<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Option 5<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>There are few different input types. The first is a standard input. This should be used for form inputs. The type might changed based on the value of the data. The second is a search input. This type should be used when a user is preforming a searching on the view or application. Lastly, the select. This element will be used when a user needs to select one object of many.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create form elements.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.label</td>
+          <td>All standard form inputs should have a label to explain what data is expected. <pre class="highlight html"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Label Text Here<span class="nt">&lt;/label&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">input[type="text"]</td>
+          <td>This is the standard input type. <pre class="highlight html"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"Add text here"</span> <span class="nt">/&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">input[type="search"]</td>
+          <td>This is the standard search input type. This input should be used for all inputs that query the database and return a result. <pre class="highlight html"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Search for an item"</span> <span class="nt">/&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">select</td>
+          <td>This is the standard select input type. <pre class="highlight html"><code><span class="nt">&lt;select</span> <span class="nt">&gt;</span><span class="c">&lt;!-- select options --&gt;</span> <span class="nt">&lt;/select&gt;</span></code></pre>
+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section role="region" aria-labelledby="links" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="links">Links</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Hover</h5>
+    </header>
+    <ul class="links">
+      <li class="link float--left margin-right--charlie">
+        <a href="#" class="link--primary">Click On Me</a>
+      </li>
+      <li class="link float--left margin-right--charlie">
+        <a href="#" class="link--secondary">Click On Me</a>
+      </li>
+      <li class="link float--left margin-right--charlie">
+        <a href="#" class="link--warning">Click On Me</a>
+      </li>
+      <li class="link float--left margin-right--charlie">
+        <a href="#" class="link--disabled">Click On Me</a>
+      </li>
+    </ul>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary"</span><span class="nt">&gt;</span>Link Title Here<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--secondary"</span><span class="nt">&gt;</span>Link Title Here<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Link Title Here<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--disabled"</span><span class="nt">&gt;</span>Link Title Here<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Links should be used to move a user from one page to another. The primary link is suggested in most cases. The exception to the rule is if a user is adding an item. Because we want to maintain a level of consistency, the secondary link (purple color) should be used. This will ensure it is the same color as the primary add button.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create links.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.link--primary</td>
+          <td>This class name should be applied to an anchor tag. <pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary"</span><span class="nt">&gt;</span>Link Title Here<span class="nt">&lt;/a&gt;</span></code></pre>
+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section role="region" aria-labelledby="modals" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="modals">Modals</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Normal, Active</h5>
+    </header>
+    <!-- Modal example -->
+    <button class="button--primary modal__trigger">Click for Modal</button>
+    <div class="modal">
+      <div class="modal__overlay" aria-hidden="true">
+        <div class="modal__container">
+          <a href="#" role="button" class="modal__close">
+            <svg version="1.1" id="Layer_1" x="0px" y="0px" viewbox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve" class="modal__close-icon">
+<g id="Page-1">
+  <path id="app-icon" class="st0" d="M0.8,1.7l13.2,13.2c0.4,0.4,1,0.4,1.4,0c0.4-0.4,0.4-1,0-1.4L2.2,0.3c-0.4-0.4-1-0.4-1.4,0 S0.4,1.4,0.8,1.7L0.8,1.7z M1.7,15.2L15.2,1.7c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L0.3,13.8c-0.4,0.4-0.4,1,0,1.4 C0.7,15.6,1.3,15.6,1.7,15.2L1.7,15.2z"></path></g>
+</svg>
+
+          </a>
+          <div class="modal__body">
+            <header class="modal__header">
+              <h3 class="title">Modal Title</h3>
+            </header>
+            <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+            <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end example -->
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button--primary modal__trigger"</span><span class="nt">&gt;</span>Click for Modal<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__overlay"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"modal__close"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">version=</span><span class="s">"1.1"</span> <span class="na">id=</span><span class="s">"Layer_1"</span> <span class="na">x=</span><span class="s">"0px"</span> <span class="na">y=</span><span class="s">"0px"</span> <span class="na">viewbox=</span><span class="s">"0 0 16 16"</span> <span class="na">style=</span><span class="s">"enable-background:new 0 0 16 16;"</span> <span class="na">xml:space=</span><span class="s">"preserve"</span> <span class="na">class=</span><span class="s">"modal__close-icon"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;g</span> <span class="na">id=</span><span class="s">"Page-1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;path</span> <span class="na">id=</span><span class="s">"app-icon"</span> <span class="na">class=</span><span class="s">"st0"</span> <span class="na">d=</span><span class="s">"M0.8,1.7l13.2,13.2c0.4,0.4,1,0.4,1.4,0c0.4-0.4,0.4-1,0-1.4L2.2,0.3c-0.4-0.4-1-0.4-1.4,0 S0.4,1.4,0.8,1.7L0.8,1.7z M1.7,15.2L15.2,1.7c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L0.3,13.8c-0.4,0.4-0.4,1,0,1.4 C0.7,15.6,1.3,15.6,1.7,15.2L1.7,15.2z"</span><span class="nt">&gt;&lt;/path&gt;&lt;/g&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"modal__header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Modal Title<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;/header&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Modals are used as a way for the user to interact with the view without leaving it. For example, if the user clicks on an add site button from an account page, a modal should be revealed that allows the user to input the data and create a new site. Modal should be reserved to small or single actions. Never use a modal as a step action or multi-part form.</p>
+    </header>
+  </div>
+</section>
+<section role="region" aria-labelledby="tables" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="tables">Tables</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Active</h5>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Table Header <i class="table__header__icon"><img src="../images/icons/functional/sort-icon.svg" /></i></th>
+        <th>Table Header <i class="table__header__icon"><img src="../images/icons/functional/sort-icon.svg" /></i></th>
+        <th>Table Header <i class="table__header__icon"><img src="../images/icons/functional/sort-icon.svg" /></i></th>
+        <th>Table Header <i class="table__header__icon"><img src="../images/icons/functional/sort-icon.svg" /></i></th>
+        <th>Action</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr class="table__row">
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>10,000</td>
+          <td>12,220</td>
+          <td>
+            <a href="#" class="link--primary margin-right--charlie">View</a>
+            <a href="#" class="link--warning">Delete</a>
+          </td>
+          <td class="table__expand">
+            <a href="#" class="table__expand-trigger">
+              <img class="table__expand-icon" src="../images/icons/functional/arrow-icon.svg" />
+            </a>
+          </td>
+        </tr>
+        <tr class="table__hidden" aria-hidden="true">
+          <td colspan="6" class="reset-padding">
+            <table class="table table-bravo">
+              <thead>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Action</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem ipsum dolor sit amet</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>
+                    <a href="#" class="link--primary margin-right--charlie">View</a>
+                    <a href="#" class="link--warning">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit amet</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>
+                    <a href="#" class="link--primary margin-right--charlie">View</a>
+                    <a href="#" class="link--warning">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit amet</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>
+                    <a href="#" class="link--primary margin-right--charlie">View</a>
+                    <a href="#" class="link--warning">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr class="table__row">
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>10,000</td>
+          <td>12,220</td>
+          <td>
+            <a href="#" class="link--primary margin-right--charlie">View</a>
+            <a href="#" class="link--warning">Delete</a>
+          </td>
+          <td class="table__expand">
+            <a href="#" class="table__expand-trigger">
+              <img class="table__expand-icon" src="../images/icons/functional/arrow-icon.svg" />
+            </a>
+          </td>
+        </tr>
+        <tr class="table__hidden" aria-hidden="true">
+          <td colspan="6" class="reset-padding">
+            <table class="table table-bravo">
+              <thead>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Action</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem ipsum dolor sit amet</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>
+                    <a href="#" class="link--primary margin-right--charlie">View</a>
+                    <a href="#" class="link--warning">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit amet</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>
+                    <a href="#" class="link--primary margin-right--charlie">View</a>
+                    <a href="#" class="link--warning">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit amet</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>Lorem ipsum dolor sit</td>
+                  <td>
+                    <a href="#" class="link--primary margin-right--charlie">View</a>
+                    <a href="#" class="link--warning">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-alpha"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Header <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"table__header__icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"../images/icons/functional/sort-icon.svg"</span> <span class="nt">/&gt;&lt;/i&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Header <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"table__header__icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"../images/icons/functional/sort-icon.svg"</span> <span class="nt">/&gt;&lt;/i&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Header <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"table__header__icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"../images/icons/functional/sort-icon.svg"</span> <span class="nt">/&gt;&lt;/i&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Table Header <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"table__header__icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"../images/icons/functional/sort-icon.svg"</span> <span class="nt">/&gt;&lt;/i&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Action<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet.<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet.<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>10,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>12,220<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table__expand"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"table__expand-trigger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"table__expand-icon"</span> <span class="na">src=</span><span class="s">"../images/icons/functional/arrow-icon.svg"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__hidden"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"6"</span> <span class="na">class=</span><span class="s">"reset-padding"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bravo"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;thead&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Action<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/thead&gt;</span>
+            <span class="nt">&lt;tbody&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;/tbody&gt;</span>
+          <span class="nt">&lt;/table&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet.<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet.<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>10,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>12,220<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table__expand"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"table__expand-trigger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"table__expand-icon"</span> <span class="na">src=</span><span class="s">"../images/icons/functional/arrow-icon.svg"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__hidden"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"6"</span> <span class="na">class=</span><span class="s">"reset-padding"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bravo"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;thead&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Table Header<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Action<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/thead&gt;</span>
+            <span class="nt">&lt;tbody&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--primary margin-right--charlie"</span><span class="nt">&gt;</span>View<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link--warning"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;/tbody&gt;</span>
+          <span class="nt">&lt;/table&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Tables are to be used for tabular data in the application. Most of the views are made of a tables to display the account, site or pool content. Addtionally, as a way to peek inside of a site or pool without having to drill into its view, the user can expand the table and see a layer down.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create a table.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.table</td>
+          <td>Set this class on the table element. This class applies the base styles that all tables inherit. <pre class="highlight html"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Table Content --&gt;</span><span class="nt">&lt;/table&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.table-alpha</td>
+          <td>Set this class on the table element. This is the standard table class and should accompany the table class attribute. <pre class="highlight html"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-alpha"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Table Content --&gt;</span><span class="nt">&lt;/table&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.table-bravo</td>
+          <td>Set this class on the table element. This class should only be used for tables within tables. It has a slightly darker features.<pre class="highlight html"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bravo"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Table Content --&gt;</span><span class="nt">&lt;/table&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.table__row</td>
+          <td>Set this class on the table row element of the parent table.<pre class="highlight html"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__row"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Table Content --&gt;</span><span class="nt">&lt;/tr&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.table__hidden</td>
+          <td>Set this class on the table row element that contains the nested table.<pre class="highlight html"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__hidden"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Table Content --&gt;</span><span class="nt">&lt;/tr&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">[aria-hidden="true"]</td>
+          <td>Set this attribute on the table row element that contains the nested table.<pre class="highlight html"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__hidden"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Table Content --&gt;</span><span class="nt">&lt;/tr&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">[aria-hidden="false"]</td>
+          <td>Set this attribute on the table row element that contains the nested table when it is expanded.<pre class="highlight html"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table__hidden"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Table Content --&gt;</span><span class="nt">&lt;/tr&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.table__header__icon</td>
+          <td>Set this attribute on the table header element that contains an icon. For example a sort trigger. <pre class="highlight html"><code><span class="nt">&lt;th&gt;</span>Table Header <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"table__header__icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"../images/icons/functional/sort-icon.svg"</span> <span class="nt">/&gt;&lt;/i&gt;&lt;/th&gt;</span></code></pre>
+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section role="region" aria-labelledby="tabs" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="tabs">Tabs</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Active</h5>
+    </header>
+    <ul class="tab__list" id="tab__list-example">
+        <li class="tab__item">
+          <a href="#" class="tab__link">Tab Link One</a>
+        </li>
+        <li class="tab__item">
+          <a href="#" class="tab__link">Tab Link Two</a>
+        </li>
+        <li class="tab__item">
+          <a href="#" class="tab__link">Tab Link Three</a>
+        </li>
+    </ul>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"tab__list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"tab__link tab__link--active"</span><span class="nt">&gt;</span>Tab Link One<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"tab__link"</span><span class="nt">&gt;</span>Tab Link Two<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"tab__link"</span><span class="nt">&gt;</span>Tab Link Three<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Tabs should be used to seperate views within views. The content should be related in some way. For example, the account view should be made of of three tabs: Account Details, Permaleased Numbers and Edit Account. The goal is to allow users to move from one section of an account, site or pool fluidly without having to search for navigation items.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create tabs.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.tab__list</td>
+          <td>This class name should be applied to an unordered list element. It is main wrapper to a tab list. <pre class="highlight html"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"tab__list"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Tab List Items --&gt;</span><span class="nt">&lt;/ul&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.tab__item</td>
+          <td>Set this on the list item. <pre class="highlight html"><code><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Tab List Anchor --&gt;</span><span class="nt">&lt;/li&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.tab__link</td>
+          <td>Set this on the anchor item nested inside of a tab item. <pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"tab__link"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Tab Name --&gt;</span><span class="nt">&lt;/a&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">.tab__link--active</td>
+          <td>Set this on the anchor item that is currently active. It applies the active tab link styles. <pre class="highlight html"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"tab__link tab__link--active"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Tab Name --&gt;</span><span class="nt">&lt;/a&gt;</span></code></pre>
+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section role="region" aria-labelledby="status-bars" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="status-bars">Status Bars</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base</h5>
+    </header>
+        <div class="status-bar--normal">
+          <h5 class="status-bar__title">25%</h5>
+        </div>
+        <div class="status-bar--caution">
+          <h5 class="status-bar__title">65%</h5>
+        </div>
+        <div class="status-bar--warning">
+          <h5 class="status-bar__title">95%</h5>
+        </div>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<pre class="highlight html"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"status-bar--normal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"status-bar__title"</span><span class="nt">&gt;</span>25%<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"status-bar--caution"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"status-bar__title"</span><span class="nt">&gt;</span>65%<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"status-bar--warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"status-bar__title"</span><span class="nt">&gt;</span>95%<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+</code></pre>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Status bars should be used to indicate the total number of phone numbers in use for an account. This component should give the user an indication of what accounts need attention and what ones are OK.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create buttons.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
   </div>
 </section>
     </main>
