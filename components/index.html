@@ -17,7 +17,7 @@
   <body class="components components_index">
     <aside role="sidebar" class="page__navigation site__navigation">
   <header role="banner" class="page__navigation__header">
-<a href="/Fuse-Styleguide/">      <img class="logo" src="../images/logos/logo-white.svg" />
+<a href="/">      <img class="logo" src="../images/logos/logo-white.svg" />
 </a>  </header>
   <nav role="navigation" class="page__navigation__navbar">
     <h6 class="navbar__title">NAVIGATION</h6>
@@ -26,31 +26,31 @@
           <a class="navbar__link--toggle navbar__link--toggle-icon" href="#">Design Components</a>
           <ul class="navbar__submenu" aria-hidden="true">
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#alerts">Alerts</a>
+                <a class="submenu__item__link" href="/components/#alerts">Alerts</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#breadcrumbs">Breadcrumbs</a>
+                <a class="submenu__item__link" href="/components/#breadcrumbs">Breadcrumbs</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#buttons">Buttons</a>
+                <a class="submenu__item__link" href="/components/#buttons">Buttons</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#form-elements">Form Elements</a>
+                <a class="submenu__item__link" href="/components/#form-elements">Form Elements</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#links">Links</a>
+                <a class="submenu__item__link" href="/components/#links">Links</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#modals">Modals</a>
+                <a class="submenu__item__link" href="/components/#modals">Modals</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#tables">Tables</a>
+                <a class="submenu__item__link" href="/components/#tables">Tables</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#tabs">Tabs</a>
+                <a class="submenu__item__link" href="/components/#tabs">Tabs</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/components/#status-bars">Status Bars</a>
+                <a class="submenu__item__link" href="/components/#status-bars">Status Bars</a>
               </li>
           </ul>
         </li>
@@ -58,13 +58,13 @@
           <a class="navbar__link--toggle navbar__link--toggle-icon" href="#">Design Elements</a>
           <ul class="navbar__submenu" aria-hidden="true">
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/elements/#colors">Colors</a>
+                <a class="submenu__item__link" href="/elements/#colors">Colors</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/elements/#icons">Icons</a>
+                <a class="submenu__item__link" href="/elements/#icons">Icons</a>
               </li>
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/elements/#typography">Typography</a>
+                <a class="submenu__item__link" href="/elements/#typography">Typography</a>
               </li>
           </ul>
         </li>
@@ -72,7 +72,7 @@
           <a class="navbar__link--toggle navbar__link--toggle-icon" href="#">Design Modules</a>
           <ul class="navbar__submenu" aria-hidden="true">
               <li class="navbar__submenu__item">
-                <a class="submenu__item__link" href="/Fuse-Styleguide/modules/#navigation">Navigation</a>
+                <a class="submenu__item__link" href="/modules/#navigation">Navigation</a>
               </li>
           </ul>
         </li>
@@ -390,17 +390,45 @@
       <option>Select Option 4</option>
       <option>Select Option 5</option>
     </select>
+    <ul>
+      <li>
+        <label class="label">
+          <input type="radio" name="name" />
+          Standard Radio Input
+        </label>
+      </li>
+      <li>
+        <label class="label">
+          <input type="radio" name="name" />
+          Standard Radio Input
+        </label>
+      </li>
+      <li>
+        <label class="label">
+          <input type="radio" name="name" />
+          Standard Radio Input
+        </label>
+      </li>
+    </ul>
+
   </div>
   <div class="section__body">
     <header role="title" class="body__header">
       <h5 class="body__header__title">Sample Code</h5>
     </header>
-<pre class="highlight html"><code>  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Standard Input<span class="nt">&lt;/label&gt;</span>
+<pre class="highlight html"><code>  <span class="c">&lt;!-- Standard Text Input --&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Standard Input<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder text goes here"</span> <span class="na">class=</span><span class="s">"input--text"</span><span class="nt">&gt;</span>
+
+  <span class="c">&lt;!-- Search Input --&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Search Input<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder text goes here"</span> <span class="na">class=</span><span class="s">"input--text"</span><span class="nt">&gt;</span>
+
+  <span class="c">&lt;!-- Disabled Input --&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Disabled Input<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Can't type here"</span> <span class="na">disabled=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"input--text"</span><span class="nt">&gt;</span>
+
+  <span class="c">&lt;!-- Standard Select --&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Select Input<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;select&gt;</span>
     <span class="nt">&lt;option&gt;</span>Select Option 1<span class="nt">&lt;/option&gt;</span>
@@ -409,6 +437,8 @@
     <span class="nt">&lt;option&gt;</span>Select Option 4<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option&gt;</span>Select Option 5<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;/select&gt;</span>
+
+  <span class="c">&lt;!-- Disabled Select --&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label"</span><span class="nt">&gt;</span>Disabled Select Input<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"select"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
     <span class="nt">&lt;option&gt;</span>Select Option 1<span class="nt">&lt;/option&gt;</span>
@@ -417,6 +447,12 @@
     <span class="nt">&lt;option&gt;</span>Select Option 4<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option&gt;</span>Select Option 5<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;/select&gt;</span>
+
+  <span class="c">&lt;!-- Standard Radio Input --&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label label--radio-input"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="nt">/&gt;</span>
+    Standard Radio Input
+  <span class="nt">&lt;/label&gt;</span>
 </code></pre>
   </div>
   <div class="section__body">
@@ -454,6 +490,11 @@
         <tr>
           <td style="width:30%">select</td>
           <td>This is the standard select input type. <pre class="highlight html"><code><span class="nt">&lt;select</span> <span class="nt">&gt;</span><span class="c">&lt;!-- select options --&gt;</span> <span class="nt">&lt;/select&gt;</span></code></pre>
+</td>
+        </tr>
+        <tr>
+          <td style="width:30%">input[type="radio"]</td>
+          <td>This is the standard radio input type. <pre class="highlight html"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="nt">/&gt;</span></code></pre>
 </td>
         </tr>
       </tbody>
