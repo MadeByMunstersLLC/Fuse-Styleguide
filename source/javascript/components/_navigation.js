@@ -27,7 +27,19 @@ $navbarToggle.on('click', function (event) {
 
 });
 
-
+// Add Active State to Navigation On Page Load
+$(document).ready(function($) {
+  if(window.location.href.indexOf('/components/') > -1) {
+    $('.navbar__item.components').addClass($navbarItemActive);
+    $('.navbar__item.components .navbar__submenu').addClass($submenuActive);
+  } else if(window.location.href.indexOf('elements') >= 0) {
+    $('.navbar__item.elements').addClass($navbarItemActive);
+    $('.navbar__item.elements .navbar__submenu').addClass($submenuActive);
+  } else if(window.location.href.indexOf('modules') >= 0) {
+    $('.navbar__item.modules').addClass($navbarItemActive);
+    $('.navbar__item.modules .navbar__submenu').addClass($submenuActive);
+  };
+});
 
 // Module Navigation
 $navbarToggleExample.on('click', function (event) {

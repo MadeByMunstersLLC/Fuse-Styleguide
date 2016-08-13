@@ -1,5 +1,6 @@
 site_navigation:
   - section_title: Design Components
+    section_url: components
     sections:
       - section_title: Alerts
         section_link: 'components/#alerts'
@@ -20,6 +21,7 @@ site_navigation:
       - section_title: Status Bars
         section_link: 'components/#status-bars'
   - section_title: Design Elements
+    section_url: elements
     sections:
       - section_title: Colors
         section_link: 'elements/#colors'
@@ -28,6 +30,7 @@ site_navigation:
       - section_title: Typography
         section_link: 'elements/#typography'
   - section_title: Design Modules
+    section_url: modules
     sections:
       - section_title: Navigation
         section_link: 'modules/#navigation'
